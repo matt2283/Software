@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #B3B7BA; /* Slopes */
+    color: #090F15; /* Midnight */
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #D3D1CE; /* Arctic */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(108, 109, 116, 0.2); /* Apres Ski sombra */
+    animation: fadeIn 1s ease-in;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #090F15; /* Midnight */
+    margin-bottom: 25px;
+}
+
+.btn-volver {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #090F15; /* Midnight */
+    color: #FFFFFF; /* White */
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: 600;
+}
+
+.btn-volver:hover {
+    background-color: #6C6D74; /* Apres Ski */
+    color: #FFFFFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF; /* White */
+    animation: fadeIn 0.8s ease-in-out;
+    box-shadow: 0 0 8px rgba(108, 109, 116, 0.15);
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #6C6D74; /* Apres Ski */
+}
+
+th {
+    background-color: #6C6D74; /* Apres Ski */
+    color: #FFFFFF; /* White */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #D3D1CE; /* Arctic */
+}
+
+tr:hover {
+    background-color: #B3B7BA; /* Slopes */
+}
+
+.mensaje-vacio {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    color: #090F15; /* Midnight */
+}
+
+/* Medallas con color */
+.medalla {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+.oro { color: #f4c430; }
+.plata { color: #c0c0c0; }
+.bronce { color: #cd7f32; }
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .contenedor {
+        padding: 20px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .medalla {
+        font-size: 16px;
+    }
+
+    .btn-volver {
+        padding: 8px 14px;
+        top: 20px;
+        left: 20px;
+        font-size: 0.9rem;
+    }
+}

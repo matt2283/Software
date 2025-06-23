@@ -1,0 +1,103 @@
+/* estilos_login.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #C8D9E6; /* Sky Blue */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #FFFFFF; /* White */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(47, 65, 86, 0.1); /* Navy con opacidad */
+    width: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    box-shadow: 0 15px 30px rgba(47, 65, 86, 0.15); /* Navy con opacidad */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2F4156; /* Navy */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2F4156; /* Navy */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #567C8D; /* Teal */
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #F5EFEB; /* Beige */
+    color: #2F4156; /* Navy */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #567C8D; /* Teal */
+    outline: none;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 70px;
+    box-sizing: border-box;
+}
+
+.mostrar-texto {
+    position: absolute;
+    right: 10px;
+    top: 32%;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    color: #567C8D; /* Teal */
+    cursor: pointer;
+    user-select: none;
+    padding-left: 4px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.mostrar-texto:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #2F4156; /* Navy */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #567C8D; /* Teal */
+}

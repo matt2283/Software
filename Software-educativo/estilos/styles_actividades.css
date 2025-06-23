@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 850px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #1e88e5;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Tarjetas de temas */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  color: #2979ff;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 14px;
+  width: 200px;
+  font-size: 1.1em;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #e0e0e0;
+}
+
+.tarjeta:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-4px);
+}
+
+/* Botón ranking (si decides activarlo) */
+.boton-ranking {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2979ff;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.boton-ranking:hover {
+  background-color: #1565c0;
+}
+
+/* Botón de regreso (🏠) */
+.btn-volver {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.6em;
+  background-color: #ffffff;
+  color: #2979ff;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.btn-volver:hover {
+  background-color: #e3f2fd;
+  transform: scale(1.1);
+}
